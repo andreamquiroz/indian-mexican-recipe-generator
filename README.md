@@ -17,8 +17,8 @@ Indian subcontinental recipes (Indian, Pakistani, Bangladeshi cuisines)
 Mexican and Central American recipes (including Honduran variations)
 Fusion recipes that blend these culinary traditions
 
-**Acknowledgments
+**Acknowledgments**
 
 RecipeNLG Dataset creators
 Hugging Face Transformers library
-The open-source community for inspiration and tools**
+The open-source community for inspiration and tools
