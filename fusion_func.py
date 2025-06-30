@@ -2,10 +2,13 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 import torch
 import re
 
+model_name = "PinchuPanda/Recipe-fusion-gen"
+model_dir = "./gpt2-fusion-recipes"
+
 # Setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-tokenizer = GPT2Tokenizer.from_pretrained("./gpt2-fusion-recipes")
-model = GPT2LMHeadModel.from_pretrained("./gpt2-fusion-recipes").to(device)
+tokenizer = GPT2Tokenizer.from_pretrained(model_dir)
+model = GPT2LMHeadModel.from_pretrained(model_dir).to(device)
 
 
 def generate_recipe(dish_name):
