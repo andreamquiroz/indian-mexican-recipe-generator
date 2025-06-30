@@ -10,13 +10,16 @@ tokenizer = GPT2Tokenizer.from_pretrained("./gpt2-fusion-recipes")
 model = GPT2LMHeadModel.from_pretrained("./gpt2-fusion-recipes").to(device)
 
 # Prompt format — your input starts like this
-prompt = """
+prompt1 = """
 Title: Tikka Tacos
 Ingredients:
 - Chicken
 - Tikka masala sauce
 - Tortillas
 Instructions:
+"""
+prompt = """
+Title: Chicken Tikka Tacos
 """
 
 # Tokenize and generate
